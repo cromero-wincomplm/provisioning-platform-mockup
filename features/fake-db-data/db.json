@@ -1,12 +1,61 @@
 {
-    "data":{
-        "wex-center-data":[],
+    "data": {
+        "wex_center_data": {
+            "wexes": [
+                {
+                    "displayName": "Assembly Where Used",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-asm-wused.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Coversheet",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-coversheet.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Watermark",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-watermark.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Watermark Adv",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-watermark.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Representation Export",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-repexport.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Representation Export+",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-repexport-plus.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Change Analysis",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-change-analysis.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "Change Validate",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-change-validate.release&wc-version=WIND112&ext=png"
+                },
+                {
+                    "displayName": "PDF Quick Access",
+                    "imageSrc": "https://windchill-extensions.ptc.com/get-icon?wex-id=com.wincomplm.wex-quickaccess.release&wc-version=WIND112&ext=png"
+                }
+            ]
+        },
         "sharepoint-data": [],
-        "nexus-data":[],
-        "provisioning_platform_data":{
-            "users":[
-                {"name":"Jane", "lastname":"Doe", "email":"account_0@customer.com","password":"12345"},
-                {"name":"John", "lastname":"Doe", "email":"account_1@customer.com","password":"12345"}
+        "nexus-data": [],
+        "provisioning_platform_data": {
+            "users": [
+                {
+                    "name": "Jane",
+                    "lastname": "Doe",
+                    "email": "account_0@customer.com",
+                    "password": "12345"
+                },
+                {
+                    "name": "John",
+                    "lastname": "Doe",
+                    "email": "account_1@customer.com",
+                    "password": "12345"
+                }
             ]
         }
     }

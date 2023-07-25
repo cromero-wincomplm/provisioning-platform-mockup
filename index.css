@@ -7,6 +7,7 @@ body {
         'footer footer footer footer footer footer';
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    font-family: "Lato", sans-serif;
 }
 
 header {
@@ -50,6 +51,7 @@ footer {
     color: aliceblue;
     text-align: center;
     padding-top: 8px;
+    height: 40px;
 }
 footer img{
     height: 25px;
