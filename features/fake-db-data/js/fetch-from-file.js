@@ -1,12 +1,13 @@
 const userInfo = document.getElementById("userInfo");
+const FAKE_DB_LOCATION = "../../fake-db-data/db.json";
 async function fetchData() {
   try {
-    const response = await fetch('../db.json'); // Replace '../db.json' with your JSON file path
+    const response = await fetch(FAKE_DB_LOCATION); // Replace '../db.json' with your JSON file path
     if (!response.ok) {
       throw new Error('Failed to fetch data');
     }
     const jsonFileRootObject = await response.json();
-    console.log(jsonFileRootObject);
+   // console.log(jsonFileRootObject);
     return jsonFileRootObject.data;
   } catch (error) {
     console.error('Error:', error.message);
