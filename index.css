@@ -2,8 +2,8 @@ body {
     display: grid;
     grid-template-areas:
         'header header header header header header'
-        'menu main main main right right'
-        'menu main main main right right'
+        'menu main main main main main'
+        'menu main main main main main'
         'footer footer footer footer footer footer';
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -12,6 +12,7 @@ body {
 header {
     background: rgb(96, 150, 251);
     grid-area: header;
+    height:fit-content;
 }
 
 header ul {
@@ -38,6 +39,9 @@ header ul li img {
     width: 16px;
     height: 16px;
     background: gray;
+}
+header ul li:has(> button)  {
+    float: left; 
 }
 
 footer {
