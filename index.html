@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provisoning Platform</title>
+</head>
+
+<body 
+style="
+    background: blue;
+    display: grid;  
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu main main main right right'
+        'footer footer footer footer footer footer';
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(5, 1fr);"
+    >
+    <header style="background: orange; grid-area: header;">Navigation Bar</header>
+    <aside style="background: yellow; grid-area: menu; ">Side bar</aside>
+    <article style="background: white; grid-area: main;">Table with downloadable software</article>
+    <footer style="background: gray; grid-area: footer;">Powered by: Wincom PLM</footer>
+</body>
+
+</html>
