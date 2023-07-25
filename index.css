@@ -33,8 +33,20 @@ header ul li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 header ul li img {
     width: 16px;
     height: 16px;
     background: gray;
+}
+
+footer {
+    background: rgb(3, 150, 20);
+    grid-area: footer;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 8px;
+}
+footer img{
+    height: 25px;
 }
