@@ -1,0 +1,13 @@
+{
+    "data":{
+        "wex-center-data":[],
+        "sharepoint-data": [],
+        "nexus-data":[],
+        "provisioning_platform_data":{
+            "users":[
+                {"name":"Jane", "lastname":"Doe", "email":"account_0@customer.com","password":"12345"},
+                {"name":"John", "lastname":"Doe", "email":"account_1@customer.com","password":"12345"}
+            ]
+        }
+    }
+}
