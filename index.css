@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu main main main right right'
+        'footer footer footer footer footer footer';
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+header {
+    background: rgb(96, 150, 251);
+    grid-area: header;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: block;
+    padding: 8px;
+    float: right;
+}
+
+header ul li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+header ul li img {
+    width: 16px;
+    height: 16px;
+    background: gray;
+}
