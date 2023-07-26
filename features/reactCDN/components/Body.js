@@ -1,10 +1,11 @@
 import '../css/base.css';
-import NavigationBar from './NavigationBar'
+import SideBar from './components/SideBar'
+
 
 function Body() {
     return (
         <div id="mockup-body" className="mw-100">
-            <NavigationBar />
+            <SideBar />
         </div>
     );
 
