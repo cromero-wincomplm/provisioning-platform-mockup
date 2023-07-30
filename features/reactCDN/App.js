@@ -1,6 +1,7 @@
 
 import { Header, Footer } from './components/Base'
-import Body from './components/Body'
+import Body from './components/Body';
+
 
 function App() {
   return (

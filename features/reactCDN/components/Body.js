@@ -1,6 +1,5 @@
 import '../css/base.css';
-import SideBar from './components/sidebar/SideBar'
-import ContentArea from '../components/sidebar/ContentArea';
+import ContentArea from './content_area/ContentArea';
 
 function Body() {
     return (
