@@ -1,0 +1,35 @@
+:root {
+    --wincom-gray: rgb(192, 192, 192);
+    --wincom-white: rgb(230, 230, 230);
+}
+html, body {
+    margin:0px;
+    padding:5px;
+}
+* {
+    font-family: sans-serif;
+    
+}
+
+.bg-wincom-gray {
+    background-color: var(--wincom-gray);
+
+}
+
+.bg-wincom-white {
+    background-color: var(--wincom-white);
+}
+.carousel{
+    margin:auto;
+    padding:0;
+}
+.carousel-inner {
+    margin-left: 20%;
+    max-width: 450px;
+    overflow: hidden;
+}
+.carousel-item:has(>img){
+    
+    max-width: 350px;
+
+}
