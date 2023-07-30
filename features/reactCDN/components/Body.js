@@ -1,11 +1,10 @@
 import '../css/base.css';
-import SideBar from './components/SideBar'
-
+import ContentArea from './content_area/ContentArea';
 
 function Body() {
     return (
         <div id="mockup-body" className="mw-100">
-            <SideBar />
+            <ContentArea />
         </div>
     );
 

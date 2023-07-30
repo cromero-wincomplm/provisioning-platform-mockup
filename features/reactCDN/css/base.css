@@ -14,3 +14,13 @@
 .bg-wincom-white {
     background-color: var(--wincom-white);
 }
+.carousel-inner {
+    margin-left: 40%;
+    max-width: 450px;
+    overflow: hidden;
+}
+.carousel-item:has(>img){
+    
+    max-width: 350px;
+
+}
