@@ -44,8 +44,11 @@ function createTHs(headers) {
     }
     return ths;
 }
+function createImg(imgSrc){
+    return <img src={imgSrc} style={{maxHeight:'20px', maxWidth:'20px'}}/>
+}
 function createSingleTDElement(strTD) {
-    return <td>{strTD}</td>
+    return <td  style={{color:'aliceblue'}}><b>{strTD}</b></td>
 }
 function createTR(objTR) {
     return (
@@ -54,6 +57,7 @@ function createTR(objTR) {
             {createSingleTDElement(objTR.wexName)}
             {createSingleTDElement(objTR.version)}
             {createSingleTDElement(objTR.status)}
+            {createSingleTDElement(createImg(objTR.download))}
         </tr>
     );
 
@@ -61,7 +65,7 @@ function createTR(objTR) {
 export function TableWithProps(props) {
 
     return (
-        <table class="table">
+        <table class="table table-hover table-responsive-sm" style={{ resize: 'both',  overflow: 'auto'  }}>
             <thead>
                 <tr>
                     {createTHs(props.headers)}

@@ -3,7 +3,7 @@ import '../css/base.css';
 
 export function Header() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{  boxShadow: '3px 2px rgb(0,0,0,0.20)'}}>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{ padding:'10px', width:'100%',boxShadow: '3px 2px rgb(0,0,0,0.20)'}}>
              <a class="navbar-brand" href="#"><img src={"../../../features/reactCDN/img/wincomlogo.png"} style={{height:'45px', width:'45px'}}/></a>
             <h5 className="">WINCOM Software Provisioning </h5>
         </nav>

@@ -72,7 +72,8 @@ export function CarouselFromProps(props) {
     }
 
     return (
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style={{width:'550px', alignSelf:'center'}}>
+            <label>Available Wexes</label>
             <div class="carousel-inner">
                 { carouselItems }
 

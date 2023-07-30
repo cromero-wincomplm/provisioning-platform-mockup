@@ -5,7 +5,7 @@ import Body from './components/Body';
 
 function App() {
   return (
-    <div id="mockup-root" class="bg-wincom-gray">
+    <div id="mockup-root" class="bg-wincom-gray" style={{overflow: 'hidden'}}>
       <Header />
       <Body />
       <Footer />

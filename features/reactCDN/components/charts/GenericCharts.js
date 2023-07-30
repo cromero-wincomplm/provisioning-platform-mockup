@@ -19,6 +19,7 @@ export function ChartComponent(props) {
 
         // Options for the chart
         const options = {
+            responsive:true,
             scales: {
                 y: {
                     beginAtZero: true,
@@ -39,8 +40,11 @@ export function ChartComponent(props) {
 
     return (
 
-        <canvas id="myChart" width="400" height="300"></canvas>
+        <div>
+            Dashboard
+            <canvas id="myChart"></canvas>
 
+        </div>
     );
 }
 
