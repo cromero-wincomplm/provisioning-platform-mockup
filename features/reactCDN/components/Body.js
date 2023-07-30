@@ -3,8 +3,10 @@ import ContentArea from './content_area/ContentArea';
 
 function Body() {
     return (
-        <div id="mockup-body" className="mw-100">
+        <div id="mockup-body" className="mw-100" >
+
             <ContentArea />
+
         </div>
     );
 

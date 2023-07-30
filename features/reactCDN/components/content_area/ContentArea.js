@@ -37,7 +37,6 @@ function ContentArea() {
 
     }, []);
     let cardsInData = wexCenterData.wexes;
-    console.log(cardsInData);
     let cardsArray = [];
     cardsInData = cardsInData ? cardsInData.map((item, index) => {
         cardsArray.push({
