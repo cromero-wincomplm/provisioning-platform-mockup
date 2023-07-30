@@ -67,7 +67,7 @@ function ContentArea() {
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 
 
-                            <img id="profileImg" src={"../../../features/reactCDN/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
+                            <img id="profileImg" src={"../../../../provisioning-platform-mockup/features/reactCDN/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
 
 
                             <span class="d-none d-sm-inline mx-1">Who Ami</span>
@@ -131,8 +131,8 @@ function ContentArea() {
                     class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list"></i></a>
                 {showOrders ? <TableWithProps headers={["Order #", "WEX Name", "Version", "Status", "Download"]}
                     rows={[
-                        { header: "0001", wexName: "<myCompany> Custom IX Windchill", version: "1.28", status: "Release", download: "../../../features/reactCDN/img/download.png" },
-                        { header: "0002", wexName: "<myCompany> Watermark Templates", version: "1.6b1", status: "Beta", download: "../../../features/reactCDN/img/download.png" },
+                        { header: "0001", wexName: "<myCompany> Custom IX Windchill", version: "1.28", status: "Release", download: "../../../../provisioning-platform-mockup/features/reactCDN/img/download.png" },
+                        { header: "0002", wexName: "<myCompany> Watermark Templates", version: "1.6b1", status: "Beta", download: "../../../../provisioning-platform-mockup/features/reactCDN/img/download.png" },
                         { header: "0003", wexName: "<myCompany> WEX BOM Alert", version: "alpha-0.1.0", status: "In Development" }
                     ]} style={{ display: showOrders ? 'block' : 'none' }} /> : ''}
 

@@ -6,7 +6,7 @@ export function GenericCarousel() {
             <div class="carousel-inner">
                 {createCardFromObj({
                     bsClass: "carousel-item active card",
-                    imgSrc: "../../../features/reactCDN/img/wincomlogo.png",
+                    imgSrc: "../../../../provisioning-platform-mockup/features/reactCDN/img/wincomlogo.png",
                     imgAlt: "alternative text",
                     cardTitle: "Card Title",
                     cardText: "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -31,7 +31,7 @@ export function GenericCarousel() {
 function createTemplateCard() {
     return (
         <div class="carousel-item card" data-bs-interval="100">
-            <img src="../../../features/reactCDN/img/wincomlogo.png" height="350" width="100" class="card-img-top" alt="..." />
+            <img src="../../../../provisioning-platform-mockup/features/reactCDN/img/wincomlogo.png" height="350" width="100" class="card-img-top" alt="..." />
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
