@@ -46,7 +46,7 @@ function ContentArea() {
             cardTitle: item.displayName,
             cardText: "Description of wex",
             cardButtonHref: "https://windchill-extensions.ptc.com/",
-            cardButtonText: "Go to WEX Center"
+            cardButtonText: "Visit WEX Center"
         })
     }) : [];
     const productsBoughtData = {
