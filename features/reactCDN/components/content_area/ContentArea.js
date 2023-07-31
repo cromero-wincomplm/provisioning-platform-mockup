@@ -25,7 +25,7 @@ function ContentArea() {
     const reportABug = `mailto:${emailAddress}?subject=${encodeURIComponent(subjectBug)}&body=${encodeURIComponent(bugDescription)}`;
     const requestWEXSoftwareInvoice = `mailto:${emailAddress}?subject=${encodeURIComponent(subjectNewSoftware)}&body=${encodeURIComponent(emailNewCustomWex)}`;
     useEffect(() => {
-        const FAKE_DB_LOCATION = "../../../../provisioning-platform-mockup/features/fake-db-data/db.json";
+        const FAKE_DB_LOCATION = "https://cromero-wincomplm.github.io/provisioning-platform-mockup/features/fake-db-data/db.json";
         fetch(FAKE_DB_LOCATION)
             .then((response) => response.json())
             .then((json) => {
@@ -67,7 +67,7 @@ function ContentArea() {
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 
 
-                            <img id="profileImg" src={"../../../../provisioning-platform-mockup/features/reactCDN/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
+                            <img id="profileImg" src={" https://cromero-wincomplm.github.io/provisioning-platform-mockup/features/reactCDN/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
 
 
                             <span class="d-none d-sm-inline mx-1">Who Ami</span>
