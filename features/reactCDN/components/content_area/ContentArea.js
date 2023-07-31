@@ -25,7 +25,7 @@ function ContentArea() {
     const reportABug = `mailto:${emailAddress}?subject=${encodeURIComponent(subjectBug)}&body=${encodeURIComponent(bugDescription)}`;
     const requestWEXSoftwareInvoice = `mailto:${emailAddress}?subject=${encodeURIComponent(subjectNewSoftware)}&body=${encodeURIComponent(emailNewCustomWex)}`;
     useEffect(() => {
-        const FAKE_DB_LOCATION = "../../../features/fake-db-data/db.json";
+        const FAKE_DB_LOCATION = "../../../../provisioning-platform-mockup/features/fake-db-data/db.json";
         fetch(FAKE_DB_LOCATION)
             .then((response) => response.json())
             .then((json) => {
