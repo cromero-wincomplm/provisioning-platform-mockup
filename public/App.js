@@ -11,9 +11,9 @@ function App() {
       {
         showContentArea ?
           <Body /> :
-          <div id="mockup-body" className="mw-100" style={{ display: 'flex', justifyContent: 'center', padding: '20px', }}>
+          <div id="mockup-body" className="mw-100" style={{ display: 'flex', justifyContent: 'center', padding: '20px', paddingTop:'30px' }}>
 
-            <div id="login" style={{ border: '1px solid black', borderRadius: '5px', width: '470px', height: '370px' }} >
+            <div id="login" style={{ border: '1px solid white', borderRadius: '20px', width: '470px', height: '370px' }} >
               <div class="container-fluid" >
                 <div class="span12">
                   <div class="login well well-small">
@@ -41,7 +41,7 @@ function App() {
                         <label id="remember-me">
                           <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe" /> Remember Me?</label>
                       </div>
-                      <div class="control-group">
+                      <div class="control-group" style={{marginTop:'10px'}}>
                         <button class="btn btn-secondary btn-large btn-block" onClick={() => { setShowContentArea(true) }} id="loginButton">Login</button>
                         <button type="button" class="btn btn-muted" id="registerButton">Register</button>
 
