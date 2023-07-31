@@ -15,7 +15,7 @@ function App() {
           <Body /> :
           <div id="mockup-body" className="mw-100" style={{ display: 'flex', justifyContent: 'center', padding:'20px'}}>
 
-            <div id="login"  >
+            <div id="login" style={{border:'1px solid black', borderRadius:'5px'}} >
               <div class="container-fluid" >
                 <div class="span12">
                   <div class="login well well-small">
