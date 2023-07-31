@@ -19,7 +19,7 @@ function App() {
                   <div class="login well well-small">
                     <div class="center">
                       <p>
-                        <img src={"https://cromero-wincomplm.github.io/provisioning-platform-mockup/features/reactCDN/img/wincomlogo.png"} alt="logo" style={{ width: '40px', height: '40px' }} />
+                        <img src={"https://cromero-wincomplm.github.io/provisioning-platform-mockup/public/img/wincomlogo.png"} alt="logo" style={{ width: '40px', height: '40px' }} />
                         <span>Wincom</span>
                       </p>
                     </div>
