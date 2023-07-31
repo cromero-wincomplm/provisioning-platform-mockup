@@ -3,13 +3,6 @@ import { TableWithProps } from '../table/GenericTable';
 import { CarouselFromProps } from '../carousel/GenericCarousel';
 import { ChartComponent } from '../charts/GenericCharts';
 
-
-
-
-
-
-
-
 function ContentArea() {
     const { useState, useEffect } = React;
     const [wexCenterData, setWexCenterData] = useState({});
@@ -53,9 +46,6 @@ function ContentArea() {
         data: [6, 9, 3, 5, 2],
         label: "WEX Packages Aquired",
     };
-
-
-
     return (
         <div class="row flex-nowrap bg-wincom-gray" style={{ marginTop: '25px' }} >
             <div id="sidebar" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark collapse-horizontal rounded-top m-s-xxl ">
@@ -67,7 +57,7 @@ function ContentArea() {
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
 
 
-                            <img id="profileImg" src={" https://cromero-wincomplm.github.io/provisioning-platform-mockup/features/reactCDN/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
+                            <img id="profileImg" src={" https://cromero-wincomplm.github.io/provisioning-platform-mockup/public/img/profileImg.png"} alt="hugenerd" width="30" height="30" class="rounded-circle" />
 
 
                             <span class="d-none d-sm-inline mx-1">Who Ami</span>
@@ -75,12 +65,12 @@ function ContentArea() {
 
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
 
-                            <li><a class="dropdown-item"href={requestWEXSoftwareInvoice} onClick={() => {
-                                    alert("You will be redirected to you email client, \nmake sure to include your contact information, \nand other relevant details...")
-                                    setShowDashBoard(false)
-                                    setShowOrders(false)
-                                    setShowProducts(false)
-                                }}>New Product Request</a></li>
+                            <li><a class="dropdown-item" href={requestWEXSoftwareInvoice} onClick={() => {
+                                alert("You will be redirected to you email client, \nmake sure to include your contact information, \nand other relevant details...")
+                                setShowDashBoard(false)
+                                setShowOrders(false)
+                                setShowProducts(false)
+                            }}>New Product Request</a></li>
                             <li>
                                 <a class="dropdown-item" href={reportABug} onClick={() => {
                                     alert("You will be redirected to you email client, \nmake sure to include Log Files from your Windchill installation, \nand other relevant details...")
@@ -131,8 +121,8 @@ function ContentArea() {
                     class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list"></i></a>
                 {showOrders ? <TableWithProps headers={["Order #", "WEX Name", "Version", "Status", "Download"]}
                     rows={[
-                        { header: "0001", wexName: "<myCompany> Custom IX Windchill", version: "1.28", status: "Release", download: "../../../../provisioning-platform-mockup/features/reactCDN/img/download.png" },
-                        { header: "0002", wexName: "<myCompany> Watermark Templates", version: "1.6b1", status: "Beta", download: "../../../../provisioning-platform-mockup/features/reactCDN/img/download.png" },
+                        { header: "0001", wexName: "<myCompany> Custom IX Windchill", version: "1.28", status: "Release", download: "../../../../provisioning-platform-mockup/public/img/download.png" },
+                        { header: "0002", wexName: "<myCompany> Watermark Templates", version: "1.6b1", status: "Beta", download: "../../../../provisioning-platform-mockup/public/img/download.png" },
                         { header: "0003", wexName: "<myCompany> WEX BOM Alert", version: "alpha-0.1.0", status: "In Development" }
                     ]} style={{ display: showOrders ? 'block' : 'none' }} /> : ''}
 
