@@ -11,50 +11,53 @@ function App() {
       {
         showContentArea ?
           <Body /> :
-          <div id="mockup-body" className="mw-100" style={{ display: 'flex', justifyContent: 'center', padding:'20px'}}>
+          <div id="mockup-body" className="mw-100" style={{ display: 'flex', justifyContent: 'center', padding: '20px', }}>
 
-            <div id="login" style={{border:'1px solid black', borderRadius:'5px'}} >
+            <div id="login" style={{ border: '1px solid black', borderRadius: '5px', width: '470px', height: '370px' }} >
               <div class="container-fluid" >
                 <div class="span12">
                   <div class="login well well-small">
-                    <div class="center">
-                      <p>
+                    <div class="card-header bg-muted text-white" style={{ display: 'inline-flex', gap: '290px', marginTop: '5px' }}>
+                      <h4>Login</h4>
+                      <p style={{ float: 'right' }} >
                         <img src={"https://cromero-wincomplm.github.io/provisioning-platform-mockup/public/img/wincomlogo.png"} alt="logo" style={{ width: '40px', height: '40px' }} />
                         <span>Wincom</span>
                       </p>
                     </div>
+                    <div class="center">
+
+                    </div>
                     <form class="login-form" id="UserLoginForm" >
-                      <div class="control-group">
-                        <div class="input-prepend">
-                          <span class="add-on"><i class="icon-user"></i></span>
-                          <input name="eml" required="required" placeholder="Username" maxlength="255" type="text" id="UserUsername" />
-                        </div>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" />
                       </div>
-                      <div class="control-group">
-                        <div class="input-prepend">
-                          <span class="add-on"><i class="icon-lock"></i></span>
-                          <input name="password" required="required" placeholder="Password" type="password" id="UserPassword" />
-                        </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password" />
                       </div>
+
                       <div class="control-group">
                         <label id="remember-me">
                           <input type="checkbox" name="data[User][remember_me]" value="1" id="UserRememberMe" /> Remember Me?</label>
                       </div>
                       <div class="control-group">
-                        <input class="btn btn-muted btn-large btn-block" onClick={()=>{setShowContentArea(true)}} value="Sign in" />
-                      </div>
+                        <button class="btn btn-secondary btn-large btn-block" onClick={() => { setShowContentArea(true) }} id="loginButton">Login</button>
+                        <button type="button" class="btn btn-muted" id="registerButton">Register</button>
+
+                       </div>
 
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div >
 
 
       }
       <Footer />
-    </div>
+    </div >
   );
 }
 
